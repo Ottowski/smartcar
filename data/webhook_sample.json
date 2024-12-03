@@ -1,0 +1,50 @@
+{
+    "version": "2.0",
+    "webhookId": "865ca68d-a9b6-4d74-856e-605db0209eca",
+    "eventName": "dynamic",
+    "mode": "live",
+    "payload": {
+      "vehicles": [
+        {
+          "vehicleId": "00000000-0000-4000-A000-000000000000",
+          "requestId": "25d743b8-14cf-4744-b067-bd8d7daf3f1a",
+          "data": [
+            {
+              "path": "/battery",
+              "code": 200,
+              "body": {
+                "range": 283.244544,
+                "percentRemaining": 0.58
+              },
+              "headers": {
+                "sc-data-age": "2024-09-20T21:58:06.000Z"
+              }
+            },
+            {
+              "path": "/charge",
+              "code": 200,
+              "body": {
+                "isPluggedIn": false,
+                "state": "NOT_CHARGING"
+              },
+              "headers": {
+                "sc-data-age": "2024-09-20T21:58:06.000Z"
+              }
+            },
+            {
+              "path": "/location",
+              "code": 200,
+              "body": {
+                "latitude": 37.4292,
+                "longitude": 122.1381
+              },
+              "headers": {
+                "sc-data-age": "2024-09-20T21:58:48.000Z"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

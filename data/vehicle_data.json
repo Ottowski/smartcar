@@ -1,0 +1,14 @@
+{
+    "energy": 18.5,
+    "power": null,
+    "time": "2019-10-24T01:00:49.000000Z",
+    "sensors": {
+        "latitude": 37.4292,
+        "longitude": 122.1381,
+        "plugged_in": true,
+        "charging": true,
+        "soc": 0.37,
+        "range": 40.5,
+        "online": true
+    }
+}
