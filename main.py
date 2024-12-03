@@ -4,7 +4,7 @@ from src.connection_manager import ConnectionManager
 from src.smartcar import init_smartcar_router
 
 async def main():
-    mock_db = MockDatabase()  # Använd mock-databasen här
+    mock_db = MockDatabase()
     connection_manager = ConnectionManager()
 
     router = await init_smartcar_router(mock_db, connection_manager, None)

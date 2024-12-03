@@ -1,7 +1,7 @@
 # src/cache_handler.py
 class MockDatabase:
     def __init__(self):
-        # Mocked data
+        # Mockad data
         self.data = {
             "00000000-0000-4000-A000-000000000001": {
                 "device_id": "aaabe4a9-6d0c-47ef-b944-e91dc2c5a111",
