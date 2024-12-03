@@ -1,4 +1,4 @@
-# hmac_generator.py
+# src/hmac_generator.py
 import hmac
 import hashlib
 

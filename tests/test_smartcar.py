@@ -1,4 +1,4 @@
-# test_smartcar.py
+# tests/test_smartcar.py
 import pytest
 from src.mock_db import MockDB
 from src.connection_manager import ConnectionManager

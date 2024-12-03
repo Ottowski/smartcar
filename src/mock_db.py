@@ -1,4 +1,4 @@
-# mock_db.py
+# src/mock_db.py
 class MockDB:
     # Här kan vi definiera en enkel mock för att simulera databasfunktionalitet
     @staticmethod
