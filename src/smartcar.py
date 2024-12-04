@@ -3,6 +3,7 @@ import json
 import os
 from typing import Callable
 from src.mock_db import MockDB
+from src.cache_handler import MockDatabase
 from src.connection_manager import ConnectionManager
 
 class SmartCarWebhook:
@@ -20,7 +21,7 @@ class SmartCarWebhook:
             vehicle_data = json.load(file)
 
         # Loopar genom varje enhet i payload
-        for device in payload['devices']:
+        for device in payload['vehicles']:
             device_reference = device['vehicleId']
             # Hämta intern information från mock_db
             internal_data = await self.mock_db.get_internal_info(device_reference)
@@ -52,6 +53,7 @@ class SmartCarWebhook:
         return {"samples": samples}
 
 # Skapa en instans av SmartCarWebhook och returnera den för användning i testet
-def init_smartcar_router(mock_db: MockDB, connection_manager: ConnectionManager, generate_verification: Callable):
+def init_smartcar_router(mock_db: MockDatabase, connection_manager: ConnectionManager, generate_verification: Callable):
     smartcar_webhook = SmartCarWebhook(mock_db, connection_manager, generate_verification)
     return {"sample_func": smartcar_webhook.sample}
+
