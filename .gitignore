@@ -1,0 +1,24 @@
+# Ignorera virtuella miljöer
+venv/
+env/
+ENV/
+.venv/
+.VENV/
+
+# Ignorera __pycache__ och .pyc-filer
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorera pytest-cache
+.pytest_cache/
+
+# Ignorera systemfiler
+.DS_Store
+Thumbs.db
+
+# Ignorera IDE-specifika filer
+.vscode/
+.idea/
+*.swp
